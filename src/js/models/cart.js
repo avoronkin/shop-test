@@ -48,7 +48,12 @@ var Cart = Backbone.Collection.extend({
 
     //загрузка корзины из куков
     loadFromCookies: function () {
-        var cart = JSON.parse(Cookies.get('cart'));
+        var cart = [];
+
+        if(Cookies.get('cart')){
+            cart = JSON.parse(Cookies.get('cart'));
+        }
+
         this.reset(cart);
     },
 
