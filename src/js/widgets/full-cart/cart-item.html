@@ -1,0 +1,11 @@
+<td><%= item.artist %>: <%= item.album %></td>
+<td><%= item.price %></td>
+<td>
+    <%= item.quantity %>
+    <span style="width:30px;display:inline-block;margin-left:5px;">
+        <button type="button" class="inc btn btn-default btn-xs btn-block"><span class="glyphicon glyphicon-chevron-up"></span></button>
+        <button type="button" class="decr btn btn-default btn-xs btn-block"><span class="glyphicon glyphicon-chevron-down"></span></button>
+    </span>
+</td>
+<td><%= item.sum %></td>
+<td><button class="btn delete">Удалить</button></td>

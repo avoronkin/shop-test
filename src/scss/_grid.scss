@@ -1,0 +1,50 @@
+ul.grid{
+    list-style: none;
+    li{
+        float: left;
+        width: 205px;
+        height: 205px;
+    }
+}
+
+.cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+
+.full-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+.text-over{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQI12NgYGA4AwAA0QDN0A/sMwAAAABJRU5ErkJggg==);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 5px;
+    font-size:1.3em;
+}
+
+.price{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQI12NgYGA4AwAA0QDN0A/sMwAAAABJRU5ErkJggg==);
+    position: absolute;
+    top: 0;
+    left:0;
+    color: #fff;
+    padding: 5px;
+
+}
+
+.add-to-cart{
+    position: absolute;
+    top: 0;
+    right:0;
+    z-index: 50;
+}

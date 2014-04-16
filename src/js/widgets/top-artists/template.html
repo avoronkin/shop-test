@@ -1,0 +1,12 @@
+<ul class="grid">
+<% _.each(artists, function(artist, index){%>
+<li>
+    <div class="cover" style="background-image: url(<%= artist.largeImg %>);">
+        <div class="text-over">
+            <%= artist.name %>
+        </div>
+        <a class="full-overlay" href="/artists/<%= artist.mbid %>" ></a>
+    </div>
+</li>
+<%})%>
+</ul>
