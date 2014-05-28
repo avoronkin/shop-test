@@ -7,11 +7,13 @@ var gutil = require('gulp-util');
 module.exports = function (port, lrport) {
     var server = {};
 
+    //livereload
     if(lrport){
         server.lr = tinylr();
         server.lr.listen(lrport);
     }
 
+    //connect
     var app = connect();
     app.use("/", connect.static(__dirname + '/dist'));
     app.use(function (request, response, next) {

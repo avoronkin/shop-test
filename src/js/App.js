@@ -44,11 +44,9 @@ $(document).ready(function () {
 
     var layout;
     var $el = $('#main');
-console.log('$el', $el)
     //layout manager
     mediator.on('activity:start', function (page) {
 
-        console.log('activity:start', page)
         if (layout && layout.remove) {
             layout.remove();
         }

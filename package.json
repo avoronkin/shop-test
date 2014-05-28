@@ -1,32 +1,32 @@
 {
-  "name": "trello",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "backbone.Buratino": "git://github.com/avoronkin/buratino",
-    "jquery": "~2.1.0",
-    "backbone": "~1.1.2",
-    "underscore": "~1.6.0",
-    "backbone.localstorage": "~1.1.7",
-    "cookies-js": "~0.3.1"
-  },
-  "devDependencies": {
-    "gulp": "~3.5.2",
-    "gulp-browserify": "~0.4.6",
-    "tiny-lr": "0.0.5",
-    "express": "~3.4.8",
-    "gulp-watch": "~0.5.0",
-    "gulp-util": "~2.2.14",
-    "gulp-compass": "~1.1.3",
-    "gulp-clean": "~0.2.4",
-    "gulp-run-sequence": "~0.3.2",
-    "jstify": "~0.1.3",
-    "connect": "~2.14.3"
-  }
+    "name": "trello",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "backbone.Buratino": "git://github.com/avoronkin/buratino",
+        "jquery": "~2.1.0",
+        "backbone": "~1.1.2",
+        "underscore": "~1.6.0",
+        "backbone.localstorage": "~1.1.7",
+        "cookies-js": "~0.3.1"
+    },
+    "devDependencies": {
+        "gulp": "~3.5.2",
+        "gulp-browserify": "~0.4.6",
+        "tiny-lr": "0.0.5",
+        "express": "~3.4.8",
+        "gulp-watch": "~0.5.0",
+        "gulp-util": "~2.2.14",
+        "gulp-compass": "~1.1.3",
+        "gulp-clean": "~0.2.4",
+        "gulp-run-sequence": "~0.3.2",
+        "jstify": "~0.1.3",
+        "connect": "~2.14.3"
+    }
 }
