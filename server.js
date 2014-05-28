@@ -5,8 +5,12 @@ var tinylr = require('tiny-lr');
 var gutil = require('gulp-util');
 
 module.exports = function (port, lrport) {
-    var lr = tinylr();
-    lr.listen(lrport);
+    var server = {};
+
+    if(lrport){
+        server.lr = tinylr();
+        server.lr.listen(lrport);
+    }
 
     var app = connect();
     app.use("/", connect.static(__dirname + '/dist'));
@@ -23,11 +27,9 @@ module.exports = function (port, lrport) {
         });
     });
     app.listen(port);
+    server.app = app;
 
     gutil.log('Listening on', port + ' / ' + lrport);
 
-    return {
-        lr: lr,
-        app: app
-    };
+    return server;
 };

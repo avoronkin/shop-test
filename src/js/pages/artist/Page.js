@@ -14,7 +14,7 @@ module.exports = {
     name: 'Artist',
 
     onOpen: function (cb) {
-        var mbid = this.routeParams.mbid;
+        var mbid = this.params.mbid;
 
         artist.clear();
         albums.reset();

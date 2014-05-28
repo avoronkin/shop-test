@@ -32,7 +32,7 @@ var mainApp = new App({
     name: 'mainApp',
     slug: '',
     structure: structure,
-    pages: [mainPage, artistsPage, artistPage, cartPage]
+    activities: [mainPage, artistsPage, artistPage, cartPage]
 });
 
 
@@ -44,10 +44,11 @@ $(document).ready(function () {
 
     var layout;
     var $el = $('#main');
-
+console.log('$el', $el)
     //layout manager
-    mediator.on('page:change', function (page) {
+    mediator.on('activity:start', function (page) {
 
+        console.log('activity:start', page)
         if (layout && layout.remove) {
             layout.remove();
         }
