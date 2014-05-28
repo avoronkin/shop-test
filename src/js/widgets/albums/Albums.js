@@ -18,15 +18,11 @@ module.exports = View.extend({
 
     template: template,
 
-    data: function () {
-        var albums = _(this.collection.toJSON()).filter(function(album){
-            return album.mbid; 
+    getItems: function () {
+        var albums = this.collection.filter(function(album){
+            return album.get('mbid'); 
         });
 
-        var data = {
-            albums: albums
-        };
-        // console.log('albums data', data);
-        return data;
+        return albums;
     }
 });
