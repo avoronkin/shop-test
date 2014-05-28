@@ -76,7 +76,7 @@ var Cart = Backbone.Collection.extend({
             model.increaseQuantity();
         } else {//добавляем товар в корзину
 
-            this.create({
+            this.add({
                 mbid: item.get('mbid'),
                 album: item.get('name'),
                 artist: item.get('artist').name,
