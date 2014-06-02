@@ -5,7 +5,7 @@ var FullCartWidget = require('../../widgets/full-cart/Cart');
 var template = require('./layout.html');
 
 module.exports = {
-    slug: '/cart',
+    slug: 'cart',
     name: 'cart',
     layout: {
         options: {

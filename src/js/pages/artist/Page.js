@@ -10,7 +10,7 @@ var albums = new Albums();
 var AlbumsWidget = require('../../widgets/albums/Albums');
 
 module.exports = {
-    slug: '/artists/{mbid}',
+    slug: 'artists/{mbid}',
     name: 'Artist',
 
     onOpen: function (cb) {

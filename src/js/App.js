@@ -32,7 +32,9 @@ var mainApp = new App({
     name: 'mainApp',
     slug: '',
     structure: structure,
-    activities: [mainPage, artistsPage, artistPage, cartPage]
+    activities: [mainPage, 
+        // artistsPage, 
+        artistPage, cartPage]
 });
 
 

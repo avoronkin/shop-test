@@ -5,7 +5,7 @@ var $ = require('jquery');
 var TopArtistsWidget = require('../../widgets/top-artists/View');
 
 module.exports = {
-    slug: '/artists',
+    slug: 'artists',
     name: 'Artists',
     layout: {
         options: {
