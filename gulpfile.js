@@ -29,13 +29,13 @@ gulp.task('html', function () {
 
 gulp.task('scripts', function () {
 
-    return gulp.src('./src/js/main.js', {
+    return gulp.src('./node_modules/app/main.js', {
         read: false
     }).pipe(browserify({
         transform: ['jstify'],
         shim: {
             'jquery.bootstrap.modal': {
-                path: './src/js/vendor/bootstrap/modal.js',
+                path: './node_modules/app/vendor/bootstrap/modal.js',
                 exports: null,
                 depends: {
                     jquery: 'jQuery'
@@ -61,7 +61,7 @@ gulp.task('styles', function () {
 gulp.task('default', ['build'], function () {
     var servers = server(3000, 35729);
 
-    gulp.watch('./src/js/**', function (evt) {
+    gulp.watch('./node_modules/app/**', function (evt) {
         gulp.run('scripts', function () {
             servers.lr.changed({
                 body: {
